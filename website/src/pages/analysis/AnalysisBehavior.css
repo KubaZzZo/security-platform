@@ -1,0 +1,44 @@
+.analysis-behavior-page { display: flex; flex-direction: column; gap: 12px; }
+
+.analysis-behavior-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.analysis-behavior-stat-card {
+  background: var(--bg-card);
+  border-radius: 8px;
+  padding: 18px 16px;
+  border: 1px solid var(--border-light);
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.analysis-behavior-stat-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+.analysis-behavior-stat-card .stat-value { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+.analysis-behavior-stat-card .stat-label { font-size: 13px; color: var(--text-light); margin-top: 6px; }
+
+.analysis-behavior-chart {
+  background: var(--bg-card);
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.analysis-behavior-chart h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 12px 0;
+}
+
+.deviation-high { color: var(--danger); font-weight: 600; }
+.deviation-medium { color: var(--warning); font-weight: 600; }
+.deviation-low { color: var(--success); font-weight: 600; }

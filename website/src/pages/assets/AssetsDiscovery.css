@@ -1,0 +1,42 @@
+.assets-discovery-page { display: flex; flex-direction: column; gap: 14px; }
+
+.discovery-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.discovery-stat-card {
+  background: var(--bg-card);
+  border-radius: 8px;
+  padding: 18px 16px;
+  text-align: center;
+  border: 1px solid var(--border-light);
+  transition: all 0.3s ease;
+}
+
+.discovery-stat-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+.discovery-stat-card .stat-value {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.discovery-stat-card .stat-label {
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+.discovery-status-tag {
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.discovery-status-tag.managed { background: rgba(82,196,26,0.1); color: var(--success); }
+.discovery-status-tag.pending { background: rgba(250,173,20,0.1); color: var(--warning); }
+.discovery-status-tag.ignored { background: rgba(0,0,0,0.04); color: var(--text-light); }

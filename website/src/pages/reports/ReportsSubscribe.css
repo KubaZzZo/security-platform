@@ -1,0 +1,54 @@
+.reports-subscribe-page { display: flex; flex-direction: column; gap: 14px; }
+
+.subscribe-toolbar {
+  margin-bottom: 12px;
+}
+
+.subscribe-add-btn {
+  padding: 6px 18px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.subscribe-add-btn:hover { opacity: 0.85; }
+
+.subscribe-status-tag {
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.subscribe-status-tag.on { background: rgba(82,196,26,0.1); color: var(--success); }
+.subscribe-status-tag.off { background: rgba(0,0,0,0.04); color: var(--text-light); }
+
+.op-btn {
+  padding: 2px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid var(--primary);
+  background: #fff;
+  color: var(--primary);
+  margin-right: 6px;
+  transition: all 0.2s;
+}
+
+.op-btn:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.op-btn.danger {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.op-btn.danger:hover {
+  background: var(--danger);
+  color: #fff;
+}

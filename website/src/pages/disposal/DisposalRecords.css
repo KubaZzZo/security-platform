@@ -1,0 +1,47 @@
+.disposal-records-page { display: flex; flex-direction: column; gap: 12px; }
+
+.disposal-records-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.disposal-records-stat-card {
+  background: var(--bg-card);
+  border-radius: 8px;
+  padding: 18px 16px;
+  border: 1px solid var(--border-light);
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.disposal-records-stat-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+.disposal-records-stat-card .stat-value { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+.disposal-records-stat-card .stat-label { font-size: 13px; color: var(--text-light); margin-top: 6px; }
+
+.result-success {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+  background: #f6ffed;
+  color: #52c41a;
+  border: 1px solid #b7eb8f;
+}
+
+.result-fail {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+  background: #fff1f0;
+  color: #ff4d4f;
+  border: 1px solid #ffa39e;
+}

@@ -1,0 +1,13 @@
+.layout {
+  min-height: 100vh;
+  background: var(--bg-content);
+}
+
+.layout-content {
+  margin-left: 200px;
+  margin-top: 48px;
+  padding: 18px 20px;
+  min-height: calc(100vh - 48px);
+  background: var(--bg-content);
+  transition: margin-left 0.3s ease;
+}

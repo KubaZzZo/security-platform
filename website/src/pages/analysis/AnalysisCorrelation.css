@@ -1,0 +1,38 @@
+.analysis-correlation-page { display: flex; flex-direction: column; gap: 12px; }
+
+.analysis-correlation-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.analysis-correlation-stat-card {
+  background: var(--bg-card);
+  border-radius: 8px;
+  padding: 18px 16px;
+  border: 1px solid var(--border-light);
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.analysis-correlation-stat-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+.analysis-correlation-stat-card .stat-value { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+.analysis-correlation-stat-card .stat-label { font-size: 13px; color: var(--text-light); margin-top: 6px; }
+
+.corr-status {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.corr-status-confirmed { background: #f6ffed; color: #52c41a; border: 1px solid #b7eb8f; }
+.corr-status-pending { background: #fff7e6; color: #fa8c16; border: 1px solid #ffe7ba; }
+.corr-status-processing { background: #e6f7ff; color: #1890ff; border: 1px solid #91d5ff; }
+.corr-status-ignored { background: #f5f5f5; color: #999; border: 1px solid #e8e8e8; }

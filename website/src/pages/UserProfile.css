@@ -1,0 +1,195 @@
+.user-profile-page {
+  padding: 20px;
+}
+
+.user-profile-page .page-header {
+  margin-bottom: 20px;
+}
+
+.user-profile-page .page-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 4px 0;
+}
+
+.user-profile-page .page-header p {
+  font-size: 13px;
+  color: #999;
+  margin: 0;
+}
+
+.profile-content {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid var(--border-light, #e8e8e8);
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.profile-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1890ff, #36cfc9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 auto 12px;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.profile-role-tag {
+  display: inline-block;
+  padding: 2px 12px;
+  background: #e6f7ff;
+  color: #1890ff;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+
+.profile-stats {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 16px;
+}
+
+.profile-stat-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 12px;
+}
+
+.stat-label {
+  color: #999;
+}
+
+.stat-value {
+  color: #555;
+}
+
+.profile-form-card {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid var(--border-light, #e8e8e8);
+}
+
+.form-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.form-card-header h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.btn-edit {
+  padding: 5px 16px;
+  background: #fff;
+  border: 1px solid #1890ff;
+  color: #1890ff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.btn-edit:hover {
+  background: #e6f7ff;
+}
+
+.form-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-cancel {
+  padding: 5px 16px;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  color: #666;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-save {
+  padding: 5px 16px;
+  background: #1890ff;
+  border: 1px solid #1890ff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-save:hover {
+  background: #40a9ff;
+}
+
+.form-body {
+  padding: 24px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-row:last-child {
+  margin-bottom: 0;
+}
+
+.form-row label {
+  width: 80px;
+  font-size: 13px;
+  color: #666;
+  flex-shrink: 0;
+}
+
+.form-input {
+  flex: 1;
+  max-width: 360px;
+  padding: 7px 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #333;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus:not(:disabled) {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24,144,255,0.1);
+}
+
+.form-input:disabled {
+  background: #fafafa;
+  color: #999;
+  cursor: not-allowed;
+}

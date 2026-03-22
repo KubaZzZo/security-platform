@@ -1,0 +1,124 @@
+.assets-config-page { display: flex; flex-direction: column; gap: 14px; }
+
+.config-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+}
+
+.config-form-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.config-form-item label {
+  width: 80px;
+  font-size: 13px;
+  color: var(--text-primary);
+  line-height: 32px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.config-form-item select,
+.config-form-item input {
+  flex: 1;
+  height: 32px;
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.config-form-item select:focus,
+.config-form-item input:focus {
+  border-color: var(--primary);
+}
+
+.config-form-item textarea {
+  flex: 1;
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-size: 13px;
+  outline: none;
+  resize: vertical;
+  min-height: 80px;
+  font-family: monospace;
+  transition: border-color 0.2s;
+}
+
+.config-form-item textarea:focus {
+  border-color: var(--primary);
+}
+
+.config-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.config-toggle-track {
+  width: 36px;
+  height: 20px;
+  border-radius: 10px;
+  background: #ccc;
+  position: relative;
+  transition: background 0.2s;
+}
+
+.config-toggle-track.active {
+  background: var(--primary);
+}
+
+.config-toggle-track::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  top: 2px;
+  left: 2px;
+  transition: left 0.2s;
+}
+
+.config-toggle-track.active::after {
+  left: 18px;
+}
+
+.config-checkbox-group {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  height: 32px;
+}
+
+.config-checkbox-group label {
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.config-threshold {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.config-threshold input {
+  width: 80px;
+}
+
+.config-threshold span {
+  font-size: 13px;
+  color: var(--text-secondary);
+}

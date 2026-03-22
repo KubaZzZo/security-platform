@@ -1,0 +1,131 @@
+.reports-export-page { display: flex; flex-direction: column; gap: 14px; }
+
+.export-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+}
+
+.export-form-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.export-form-item label {
+  width: 80px;
+  font-size: 13px;
+  color: var(--text-primary);
+  line-height: 32px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.export-form-item select,
+.export-form-item input[type="date"] {
+  flex: 1;
+  height: 32px;
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.export-form-item select:focus,
+.export-form-item input[type="date"]:focus {
+  border-color: var(--primary);
+}
+
+.export-date-range {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.export-date-range input {
+  flex: 1;
+  height: 32px;
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 13px;
+  outline: none;
+}
+
+.export-date-range span {
+  color: var(--text-light);
+}
+
+.export-format-group {
+  display: flex;
+  gap: 0;
+  flex: 1;
+}
+
+.export-format-group .format-btn {
+  padding: 6px 20px;
+  border: 1px solid var(--border-light);
+  background: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.export-format-group .format-btn:first-child { border-radius: 4px 0 0 4px; }
+.export-format-group .format-btn:last-child { border-radius: 0 4px 4px 0; }
+.export-format-group .format-btn + .format-btn { margin-left: -1px; }
+
+.export-format-group .format-btn.active {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+  z-index: 1;
+  position: relative;
+}
+
+.export-checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  flex: 1;
+  min-height: 32px;
+}
+
+.export-checkbox-group label {
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.export-primary-btn {
+  padding: 8px 28px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  align-self: flex-start;
+  margin-left: 92px;
+}
+
+.export-primary-btn:hover { opacity: 0.85; }
+
+.export-status-tag {
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.export-status-tag.done { background: rgba(82,196,26,0.1); color: var(--success); }
+.export-status-tag.generating { background: rgba(24,144,255,0.1); color: var(--primary); }
+.export-status-tag.failed { background: rgba(255,77,79,0.1); color: var(--danger); }

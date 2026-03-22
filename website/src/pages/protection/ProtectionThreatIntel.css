@@ -1,0 +1,102 @@
+.protection-threat-intel-page { display: flex; flex-direction: column; gap: 14px; }
+
+.threat-stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.threat-stat-card {
+  background: var(--bg-card);
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.threat-stat-card .stat-label { font-size: 13px; color: var(--text-secondary); }
+.threat-stat-card .stat-value { font-size: 28px; font-weight: 700; color: var(--text-primary); }
+.threat-stat-card.danger .stat-value { color: var(--danger); }
+
+.threat-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.threat-chart-card {
+  background: var(--bg-card);
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  overflow: hidden;
+}
+
+.threat-chart-card .chart-card-header {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border-light);
+  background: #fafbfc;
+}
+
+.threat-chart-card .chart-card-header h4 {
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  padding-left: 12px;
+}
+
+.threat-chart-card .chart-card-header h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 14px;
+  background: linear-gradient(180deg, #1890ff, #096dd9);
+  border-radius: 2px;
+}
+
+.threat-chart-card .chart-card-body { padding: 16px 20px; }
+
+.confidence-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.confidence-bar .bar-track {
+  flex: 1;
+  height: 6px;
+  background: #f0f0f0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.confidence-bar .bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s;
+}
+
+.confidence-bar .bar-fill.high { background: var(--danger); }
+.confidence-bar .bar-fill.medium { background: var(--warning); }
+.confidence-bar .bar-fill.low { background: var(--success); }
+
+.confidence-bar .bar-text { font-size: 12px; color: var(--text-secondary); min-width: 36px; }
+
+.threat-type-tag {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+  background: #f0f5ff;
+  color: #2f54eb;
+  border: 1px solid #adc6ff;
+}

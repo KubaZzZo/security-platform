@@ -1,0 +1,89 @@
+.protection-realtime-page { display: flex; flex-direction: column; gap: 14px; }
+
+.realtime-stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.realtime-stat-card {
+  background: var(--bg-card);
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.realtime-stat-card .stat-label { font-size: 13px; color: var(--text-secondary); }
+.realtime-stat-card .stat-value { font-size: 28px; font-weight: 700; color: var(--text-primary); }
+.realtime-stat-card.danger .stat-value { color: var(--danger); }
+.realtime-stat-card.success .stat-value { color: var(--success); }
+
+.realtime-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.realtime-chart-card {
+  background: var(--bg-card);
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  overflow: hidden;
+}
+
+.realtime-chart-card .chart-card-header {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border-light);
+  background: #fafbfc;
+}
+
+.realtime-chart-card .chart-card-header h4 {
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  padding-left: 12px;
+}
+
+.realtime-chart-card .chart-card-header h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 14px;
+  background: linear-gradient(180deg, #1890ff, #096dd9);
+  border-radius: 2px;
+}
+
+.realtime-chart-card .chart-card-body { padding: 16px 20px; }
+
+.realtime-action-tag {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.realtime-action-tag.action-blocked { background: #f6ffed; color: #52c41a; border: 1px solid #b7eb8f; }
+.realtime-action-tag.action-alerted { background: #fff7e6; color: #fa8c16; border: 1px solid #ffe7ba; }
+
+.realtime-severity-tag {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.realtime-severity-tag.severity-high { background: linear-gradient(135deg, #fff1f0, #ffccc7); color: #cf1322; border: 1px solid #ffa39e; }
+.realtime-severity-tag.severity-medium { background: linear-gradient(135deg, #fff7e6, #ffe7ba); color: #d46b08; border: 1px solid #ffd591; }
+.realtime-severity-tag.severity-low { background: linear-gradient(135deg, #f6ffed, #d9f7be); color: #389e0d; border: 1px solid #b7eb8f; }

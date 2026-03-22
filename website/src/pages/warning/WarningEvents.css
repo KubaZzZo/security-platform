@@ -1,0 +1,88 @@
+.warning-events-page { display: flex; flex-direction: column; gap: 14px; }
+
+.warning-events-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: var(--bg-card);
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+}
+
+.warning-events-header h3 {
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  padding-left: 12px;
+}
+
+.warning-events-header h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 16px;
+  background: linear-gradient(180deg, #1890ff, #096dd9);
+  border-radius: 2px;
+}
+
+.warning-events-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.warning-events-stat {
+  background: var(--bg-card);
+  border-radius: 8px;
+  padding: 18px 16px;
+  border: 1px solid var(--border-light);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.warning-events-stat:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+.warning-events-stat .stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.warning-events-stat .stat-label {
+  font-size: 13px;
+  color: var(--text-light);
+  margin-top: 6px;
+}
+
+.event-status-tag {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.event-status-pending { background: #fff7e6; color: #fa8c16; border: 1px solid #ffe7ba; }
+.event-status-processing { background: #e6f7ff; color: #1890ff; border: 1px solid #91d5ff; }
+.event-status-archived { background: #f6ffed; color: #52c41a; border: 1px solid #b7eb8f; }
+.event-status-ignored { background: #f5f5f5; color: #999; border: 1px solid #e8e8e8; }
+
+.event-level-tag {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.event-level-high { background: linear-gradient(135deg, #ff4d4f, #cf1322); }
+.event-level-medium { background: linear-gradient(135deg, #faad14, #d48806); }
+.event-level-low { background: linear-gradient(135deg, #1890ff, #096dd9); }

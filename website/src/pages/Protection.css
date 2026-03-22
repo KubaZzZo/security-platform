@@ -1,0 +1,101 @@
+.protection-page { display: flex; flex-direction: column; gap: 14px; }
+
+.protection-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: var(--bg-card);
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.protection-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.protection-chart-card {
+  background: var(--bg-card);
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.protection-chart-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.chart-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border-light);
+  background: #fafbfc;
+}
+
+.chart-card-header h4 {
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  padding-left: 12px;
+}
+
+.chart-card-header h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 14px;
+  background: linear-gradient(180deg, #1890ff, #096dd9);
+  border-radius: 2px;
+}
+
+.chart-tabs {
+  display: flex;
+  gap: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.chart-tab {
+  padding: 4px 14px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  background: #fff;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  border: none;
+}
+
+.chart-tab:first-child { border-right: 1px solid var(--border-color); }
+
+.chart-tab:hover { color: var(--primary); background: #f0f7ff; }
+
+.chart-tab.active {
+  background: linear-gradient(135deg, #1890ff, #096dd9);
+  color: #fff;
+}
+
+.chart-card-body { padding: 16px 20px; }
+
+.block-status {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.block-done { background: #f6ffed; color: #52c41a; border: 1px solid #b7eb8f; }
+.block-ing { background: #e6f7ff; color: #1890ff; border: 1px solid #91d5ff; }
+.block-no { background: #fff1f0; color: #ff4d4f; border: 1px solid #ffa39e; }

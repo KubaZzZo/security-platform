@@ -1,0 +1,39 @@
+.monitor-network-page { display: flex; flex-direction: column; gap: 16px; }
+
+.monitor-network-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.monitor-network-stat-card {
+  background: var(--bg-card);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid var(--border-light);
+  transition: all 0.3s ease;
+}
+
+.monitor-network-stat-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+.monitor-network-stat-card .stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+
+.monitor-network-stat-card .stat-label {
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+.monitor-network-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
