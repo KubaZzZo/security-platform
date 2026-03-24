@@ -21,6 +21,7 @@ app.use('/api/global', require('./routes/global'));
 app.use('/api/messages', require('./routes/messages'));
 app.use('/api/traffic', require('./routes/traffic'));
 app.use('/api/security', require('./routes/security'));
+app.use('/api/algorithms', require('./routes/algorithms'));
 
 app.listen(PORT, () => {
   console.log(`安全感知平台后端已启动: http://localhost:${PORT}`);
