@@ -1,0 +1,26 @@
+[
+  {
+    "id": "audit-log-1774347726081-ddeh0s",
+    "action": "login",
+    "username": "admin",
+    "ip": "::1",
+    "success": true,
+    "createdAt": "2026-03-24T10:22:06.081Z"
+  },
+  {
+    "id": "audit-log-1774347690504-my3guo",
+    "action": "login",
+    "username": "admin",
+    "ip": "::1",
+    "success": true,
+    "createdAt": "2026-03-24T10:21:30.504Z"
+  },
+  {
+    "id": "audit-log-1774347669022-ai7rd9",
+    "action": "login",
+    "username": "admin",
+    "ip": "::1",
+    "success": true,
+    "createdAt": "2026-03-24T10:21:09.022Z"
+  }
+]
